@@ -9,6 +9,9 @@ export const api = createApi({
       query: (payload) => ({
         url: "openai/text",
         method: "POST",
+        // headers: {
+        //   "Access-control": "text/plain",
+        // },
         body: payload,
       }),
     }),
